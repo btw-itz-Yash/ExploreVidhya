@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Explore Vidhya</title>
+<meta name="description" content="Explore Vidhya: free live classes for Class 8 to 10 on YouTube, plus paid courses, notes and MCQs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Caveat:wght@600&family=Hind:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-head" id="top">
+  <div class="wrap head-in">
+    <a class="brand" href="#top" aria-label="Explore Vidhya home">
+      <img src="logo.jpeg" alt="logo" width="36" height="36" viewBox="0 0 36 36" aria-hidden="true">
+      <!-- <svg width="36" height="36" viewBox="0 0 36 36" aria-hidden="true"><rect width="36" height="36" rx="8" fill="#FFC928"/><text x="18" y="24.5" text-anchor="middle" font-family="Bricolage Grotesque,Segoe UI,sans-serif" font-weight="800" font-size="17" fill="#1B1A0F">EV</text></svg> -->
+      <span data-brand>Explore Vidhya</span>
+    </a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a class="pill pill-y" id="navLive" href="#" target="_blank" rel="noopener noreferrer">Free Live Classes</a>
+      <a class="pill pill-g" href="#batches">Batches</a>
+      <a href="#classes">Classes</a>
+      <a href="#lessons">Free lessons</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn-ghost btn-sm" id="navTg" href="#" target="_blank" rel="noopener noreferrer">Join Telegram</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="live-pill"><span class="dot"></span>Live on YouTube · Class 8 to 10</span>
+      <h1>Learn live &amp; become<br><span class="hl">board-exam ready</span></h1>
+      <p class="typed" aria-label="Topics: algebra, geometry, trigonometry, MCQs and notes"><span id="typed" aria-hidden="true"></span><span class="caret" aria-hidden="true"></span></p>
+      <p class="lead">PPT and PDF notes, important MCQs and a Telegram doubt group, all free to start. Made for students of Class 8 to 10.</p>
+      <div class="cta">
+        <a class="btn-hero" id="heroYt" href="#" target="_blank" rel="noopener noreferrer">Start <span class="y">free live</span> classes <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M6 2l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="btn btn-ghost" href="#batches">See batches</a>
+      </div>
+      <ul class="chips"><li>Live classes</li><li>PPT + PDF notes</li><li>Important MCQs</li><li>Telegram doubts</li></ul>
+    </div>
+    <div class="hero-art">
+      <div class="frame">
+        <div class="frame-in">
+          <!-- <ul class="boardlist"> -->
+            <!-- <li><span class="k">Class 8</span><span class="t">Algebra</span></li>
+            <li><span class="k">Class 9</span><span class="t">Geometry</span></li>
+            <li><span class="k">Class 10</span><span class="t">Trigonometry</span></li> -->
+          <!-- </ul> -->
+          <div class="teacher" id="teacherSlot">
+            <img src="teacher.png" alt="Teacher Image">
+          </div>
+        </div>
+      </div>
+      <div class="sticker s-live"><span class="tag-live"><span class="dot"></span>Free live classes</span></div>
+      <!-- <div class="sticker s-formula">x² − 5x + 6 = 0<small>x = 2 or x = 3</small></div> -->
+      <!-- <div class="sticker s-notes">PPT + PDF notes</div> -->
+    </div>
+  </div>
+</section>
+
+<div class="latest">
+  <div class="wrap">
+    <span class="tag-live"><span class="dot"></span>Season 2 · Episode 1</span>
+    <p class="l-title" id="latestTitle"><strong>Statistics: Important MCQs for Board Exam 2027</strong> <span>· Our latest live class, for Class 10</span></p>
+    <div class="actions">
+      <a class="btn btn-primary btn-sm" id="latestYt" href="#" target="_blank" rel="noopener noreferrer">Watch on YouTube</a>
+      <a class="btn btn-chalk btn-sm" id="latestTg" href="#" target="_blank" rel="noopener noreferrer">Get notes</a>
+    </div>
+  </div>
+</div>
+
+<section class="strip">
+  <div class="wrap">
+    <div class="feat"><strong>Live classes</strong><span>Join on YouTube and ask questions in the live chat.</span></div>
+    <div class="feat"><strong>PPT + PDF notes</strong><span>Shared in every video description and on Telegram.</span></div>
+    <div class="feat"><strong>Important MCQs</strong><span>Board-pattern questions explained with solutions.</span></div>
+    <div class="feat"><strong>Doubt groups</strong><span>Ask doubts in our Telegram group and WhatsApp channel.</span></div>
+  </div>
+</section>
+
+<section class="band" id="classes">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Browse by class</p>
+      <h2>Which class are you in?</h2>
+      <p>Pick your class to see the batches, notes and tests made for it.</p>
+    </div>
+    <div class="grid" id="classGrid"></div>
+  </div>
+</section>
+
+<section class="band alt" id="batches">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Batches</p>
+      <h2>Choose your batch</h2>
+      <p>Start with the free live classes. Add a full course when you want every chapter, tests and notes in one place. Paid prices are one-time.</p>
+    </div>
+    <div class="filters" id="filters" role="group" aria-label="Filter batches"></div>
+    <div class="grid" id="courseGrid"></div>
+  </div>
+</section>
+
+<section class="community">
+  <div class="wrap">
+    <div>
+      <h2>Notes, MCQs and doubts in one group</h2>
+      <p>Join the Explore Vidhya Telegram group to get PPT and PDF notes, important MCQs and answers to your doubts.</p>
+    </div>
+    <div class="cta">
+      <a class="btn btn-dark" id="commTg" href="#" target="_blank" rel="noopener noreferrer">Join Telegram group</a>
+      <a class="btn btn-ghost" id="commYt" style="border-color:var(--yellow-ink);color:var(--yellow-ink)" href="#" target="_blank" rel="noopener noreferrer">Subscribe on YouTube</a>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="lessons">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Free lessons</p>
+      <h2>Watch before you buy</h2>
+      <p>These lessons are on our YouTube channel. Each card opens YouTube in a new tab.</p>
+    </div>
+    <div class="grid" id="videoGrid"></div>
+  </div>
+</section>
+
+<section class="band alt" id="reviews">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Student reviews</p>
+      <h2>What students say</h2>
+    </div>
+    <div class="grid" id="reviewGrid"></div>
+  </div>
+</section>
+
+<section class="band" id="enroll">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Enroll</p>
+      <h2>Enroll in three quick steps</h2>
+      <p>Choose a paid course, pay with the method you prefer, then send us your details with the payment screenshot.</p>
+    </div>
+    <div class="enroll-grid">
+      <form class="card" id="enrollForm" novalidate>
+        <h3><span class="step">1</span>Your details</h3>
+        <div class="field"><label for="courseSel">Course</label><select id="courseSel" name="course"></select></div>
+        <div class="field"><label for="fName">Full name</label><input id="fName" name="name" type="text" autocomplete="name" placeholder="Student name"></div>
+        <div class="field"><label for="fPhone">WhatsApp number</label><input id="fPhone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="10-digit mobile number"></div>
+        <div class="field"><label for="fEmail">Email</label><input id="fEmail" name="email" type="email" autocomplete="email" placeholder="name@example.com"></div>
+        <ul class="err" id="formErr" aria-live="polite"></ul>
+        <p class="small" style="margin-bottom:14px"><strong>Step 3.</strong> After you pay, press the button to get your enrollment message with a reference number.</p>
+        <button class="btn btn-primary" type="submit" style="width:100%">I have paid, confirm enrollment</button>
+        <div class="done" id="done" hidden></div>
+      </form>
+
+      <div class="card">
+        <h3><span class="step">2</span>Pay</h3>
+        <div class="summary"><div><div class="eyebrow">Amount to pay</div><div class="small" id="sumCourse"></div></div><div class="amt" id="sumAmt"></div></div>
+        <div class="tabs" role="tablist" aria-label="Payment method">
+          <button class="tab" role="tab" id="t-upi" aria-controls="p-upi" aria-selected="true" type="button">UPI</button>
+          <button class="tab" role="tab" id="t-gw" aria-controls="p-gw" aria-selected="false" type="button">Card / Net banking</button>
+          <button class="tab" role="tab" id="t-bank" aria-controls="p-bank" aria-selected="false" type="button">Bank transfer</button>
+        </div>
+        <div id="p-upi" role="tabpanel" aria-labelledby="t-upi">
+          <div class="upi">
+            <div class="qr" id="qr" aria-label="UPI QR code"></div>
+            <div class="upi-info">
+              <div><div class="small">UPI ID</div><div class="copyrow"><code id="upiId"></code><button class="btn btn-ghost btn-sm" type="button" data-copy="upiId">Copy</button></div></div>
+              <div><div class="small">Amount</div><div class="copyrow"><code id="upiAmt"></code><button class="btn btn-ghost btn-sm" type="button" data-copy="upiAmt">Copy</button></div></div>
+              <p class="small">Scan with any UPI app such as PhonePe, Google Pay or Paytm. Put the student name in the payment note.</p>
+            </div>
+          </div>
+        </div>
+        <div id="p-gw" role="tabpanel" aria-labelledby="t-gw" hidden>
+          <p>Pay on our secure payment page with a debit card, credit card, net banking or any UPI app.</p>
+          <p style="margin-top:16px"><a class="btn btn-primary" id="gwBtn" href="#" target="_blank" rel="noopener noreferrer">Open payment page</a></p>
+          <p class="small" id="gwNote" style="margin-top:12px" hidden>The payment page link has not been added yet. Please use UPI or bank transfer.</p>
+        </div>
+        <div id="p-bank" role="tabpanel" aria-labelledby="t-bank" hidden>
+          <dl class="bank" id="bankList"></dl>
+          <p class="small" style="margin-top:14px">Use NEFT, IMPS or RTGS. Mention the student name and course in the remarks.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band alt" id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Questions</p>
+      <h2>Before you enroll</h2>
+    </div>
+    <div class="faq" id="faqList"></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="brand"><svg width="36" height="36" viewBox="0 0 36 36" aria-hidden="true"><rect width="36" height="36" rx="8" fill="#FFC928"/><text x="18" y="24.5" text-anchor="middle" font-family="Bricolage Grotesque,Segoe UI,sans-serif" font-weight="800" font-size="17" fill="#1B1A0F">EV</text></svg><span data-brand>Explore Vidhya</span></div>
+      <p>Live classes on YouTube for students of Class 8 to 10, with notes, MCQs and a doubt group.</p>
+    </div>
+    <div>
+      <h3>Explore</h3>
+      <ul><li><a href="#batches">Batches</a></li><li><a href="#classes">Classes</a></li><li><a href="#lessons">Free lessons</a></li><li><a href="#enroll">Enroll</a></li></ul>
+    </div>
+    <div>
+      <h3>Connect</h3>
+      <ul><li><a id="fYt" href="#" target="_blank" rel="noopener noreferrer">YouTube channel</a></li><li><a id="fTg" href="#" target="_blank" rel="noopener noreferrer">Telegram group</a></li><li id="fWa"></li><li id="fMail"></li></ul>
+    </div>
+    <p class="legal">© <span id="yr"></span> <span data-brand>Explore Vidhya</span>. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
